@@ -2,7 +2,7 @@ import React from "react";
 
 const WeatherCard = ({ weatherData }) => {
   const time = new Date(weatherData.dt * 1000).toLocaleString();
-  const weatherIcon = `http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const weatherIcon = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
 
   return (
     <div className="p-5 bg-blue-200 rounded shadow-lg">

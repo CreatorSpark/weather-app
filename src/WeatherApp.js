@@ -15,7 +15,7 @@ const WeatherApp = () => {
 
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
       )
       .then((res) => setWeatherData(res.data))
       .catch((err) => console.log(err));
